@@ -1,0 +1,12 @@
+<div class="article-container">
+  <div class="title-container">
+    <h1><%= @article.title %></h1>
+    <div>
+      <%= link_to '<i class="fa-regular fa-pen-to-square"></i>'.html_safe, edit_path(@article) %>
+      <%= link_to '<i class="fa-solid fa-trash"></i>'.html_safe, article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+    </div>
+  </div>
+  <p>
+    <%= @article.content %>
+  </p>
+</div>

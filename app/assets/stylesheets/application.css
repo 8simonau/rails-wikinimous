@@ -13,3 +13,74 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: Poppins;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+nav {
+  padding: 0px 24px;
+  height: 80px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+button {
+  background-color: #e28500;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  border: 1px solid #e28500;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.4)
+}
+
+.article-container {
+  margin-top: 30px;
+}
+
+.article-container h1 {
+  margin-bottom: 30px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title-container i {
+  font-size: 20px;
+}
+
+.title-container div {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+}
+
+.article-overview {
+  height: 70px;
+  overflow: hidden;
+}
+
+.form-container input[type=text] {
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.form-container textarea {
+  width: 100%;
+  margin: 8px 0px;
+}
